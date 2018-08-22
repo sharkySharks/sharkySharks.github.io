@@ -2,3 +2,6 @@ _site/
 .sass-cache/
 .jekyll-metadata
 node_modules
+Gemfile.lock
+.ruby-version
+.ruby-gemset
