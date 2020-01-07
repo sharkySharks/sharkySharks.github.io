@@ -18,4 +18,4 @@ medium_username: '@sharkysharks'
 google-analytics:
   id: ""
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['package.json', 'src' , 'node_modules', 'gulpfile.js']
