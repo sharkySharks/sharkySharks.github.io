@@ -5,25 +5,6 @@ description: A personal website and blog
 # url: "localhost:3000"
 
 username: sharkySharks
-user_description: "
-<p>
-I am a software engineer working on a range of techical stacks and problems.  
-</br>
-I design and build various systems, some of which include: application programming interfaces, web applications, cli programs,
-clients/servers, chatbots, databases, cloud deployment infrastructure, GitHub integrations, and all kinds of automation for repetitive tasks.
-</p>
-<p>
-I am a polyglot developer; some of my favorite programming languages are Golang, Python, and JavaScript.
-</br>
-I believe in design patterns, containerization, microservices, infrastructure as code, continuous integrations/ deliveries/ deployments, the testing pyramid,
-security throughout the SDLC, observability, and agile development practices, to name a few buzzwords.
-</p>
-<p>
-I have experience organizing agile engineering teams in SaaS, hosted, and on-premise product development for both internal and external customers.
-</br>
-I also like talking about technology on occasion and have shared my experiences with children through adults on how to teach themselves how to program.
-</p>
-"
 user_title: Software Engineer
 email: kaydenalthen@gmail.com
 twitter_username: sharkyAlt
