@@ -1,0 +1,21 @@
+---
+layout: default
+title: Blog
+---
+<div class="container" id="blog">
+    {% include nav.html %}
+    <h1 class="title">
+        Welcome to my blog!
+    </h1>
+    
+    <h3>Latest Posts</h3>
+    
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+            <p>{{ post.excerpt }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
