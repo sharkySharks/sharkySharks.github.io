@@ -8,13 +8,16 @@
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
         
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="//cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+        <link rel="stylesheet" href="/assets/vendor/font-awesome/css/all.min.css">
         <link rel="stylesheet" href="/assets/css/main.css">
         <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />
-        <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-        <script src="/assets/js/sweet-scroll.min.js"></script>
-        <script src="/assets/js/main.js"></script>
+        <script src="/assets/vendor/particles.min.js"></script>
+        <script>
+          /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+          particlesJS.load('particles-js', 'assets/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+          });
+        </script>
         {% include google-analytics.html %}
       </head>      
   <body>
@@ -25,17 +28,16 @@
                 <span class="site-description">{{site.user_title}}</span>
               </h1>
               <div class="icons-header">
-                <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{site.linkedIn_username}}/"><i class="icon fa fa-linkedin" aria-hidden="true"></i></a>
-                <a aria-label="My Github" target="_blank" href="https://github.com/{{site.github_username}}"><i class="icon fa fa-github" aria-hidden="true"></i></a>
-                <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{site.twitter_username}}"><i class="icon fa fa-twitter" aria-hidden="true"></i></a>
-                <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon fa fa-envelope"></i></a>
+                <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{site.linkedIn_username}}/"><i class="icon fab fa-linkedin" aria-hidden="true"></i></a>
+                <a aria-label="My Github" target="_blank" href="https://github.com/{{site.github_username}}"><i class="icon fab fa-github" aria-hidden="true"></i></a>
+                <a aria-label="My Presentations" target="_blank" href="https://slides.com/kaydenalthen"><i class="icon fas fa-chalkboard-teacher" aria-hidden="true"></i></a>
+                <a aria-label="My Twitter" target="_blank" href="https://twitter.com/{{site.twitter_username}}"><i class="icon fab fa-twitter" aria-hidden="true"></i></a>
+                <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon far fa-envelope"></i></a>
               </div>
               <a class="link" href="/about">About</a>
               <a class="link" href="/projects">Projects</a>
               <a class="link" href="/blog">Blog</a>
-              <a class="link" href="http://slides.com/kaydenalthen">Presentations</a>
           </div>
         </div>
-        
   </body>
 </html>

@@ -8,14 +8,14 @@
         <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
         
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="//cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+        <link rel="stylesheet" href="/assets/vendor/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="//cdn.rawgit.com/konpa/devicon/master/devicon.min.css"> -->
+        <link rel="stylesheet" href="/assets/vendor/devicon.min.css">
         <link rel="stylesheet" href="/assets/css/main.css">
         <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+        <script src="/assets/js/sweet-scroll.min.js"></script>
         
         {% include google-analytics.html %}
-        <script src="/assets/js/sweet-scroll.min.js"></script>
     </head>    
   <body>
     {% include nav.html %}
