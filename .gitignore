@@ -6,3 +6,4 @@ node_modules
 Gemfile.lock
 .ruby-version
 .ruby-gemset
+.DS_Store
