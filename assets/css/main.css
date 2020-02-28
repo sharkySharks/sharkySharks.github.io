@@ -107,39 +107,6 @@ body {
     }
 }
 
-.icons-header {
-    display: flex;
-    justify-content: center;
-}
-
-.icons-header .icon {
-    text-align: center;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    font-size: 20px;
-    padding: 10px;
-    margin: 2px;
-    border-radius: 50%;
-    border: 2px solid #fff;
-    transition: all .7s;
-}
-
-.icons-header .icon:active,
-.icons-header .icon:hover {
-    color: #1a222c;
-    background: #fff;
-}
-
-@media only screen and (min-width:768px) {
-    .icons-header .icon {
-        width: 35px;
-        height: 35px;
-        font-size: 35px;
-        padding: 17px;
-    }
-}
-
 .down,
 .icons-header,
 .user {
@@ -177,6 +144,89 @@ body {
 .footer a:active,
 .footer a:hover {
     color: #4b5664;
+}
+
+.footer {
+    background: #1a222c;
+    padding: 10px 0;
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+.footer .love {
+    color: red;
+}
+
+.footer a {
+    text-decoration: none;
+    margin: 0;
+    color: #fff;
+}
+
+.icons-header {
+    display: flex;
+    justify-content: center;
+}
+
+.icons-header .icon {
+    text-align: center;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    transition: all .7s;
+}
+
+.icons-header .icon:active,
+.icons-header .icon:hover {
+    color: #1a222c;
+    background: #fff;
+}
+
+@media only screen and (min-width:768px) {
+    .icons-header .icon {
+        width: 35px;
+        height: 35px;
+        font-size: 35px;
+        padding: 17px;
+    }
+}
+
+/* navbar alignment with main container content */
+@media only screen and (min-width: 768px) {
+    .navbar {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .navbar {
+        padding-right: 9rem;
+        padding-left: 9rem;
+    }
+}
+@media only screen and (min-width:1200px) {
+    .navbar {
+        padding-right: 18rem;
+        padding-left: 18rem;
+    }
+}
+@media only screen and (min-width:1700px) {
+    .navbar {
+        padding-right: 32rem;
+        padding-left: 32rem;
+    }
+}
+@media only screen and (min-width:2000px) {
+    .navbar {
+        padding-right: 52rem;
+        padding-left: 52rem;
+    }
 }
 
 .user {
@@ -239,22 +289,4 @@ body {
     border-color: #54516a;
     color: #fff;
     transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in;
-}
-
-.footer {
-    background: #1a222c;
-    padding: 10px 0;
-    margin-top: 100px;
-    text-align: center;
-    color: #fff;
-}
-
-.footer .love {
-    color: red;
-}
-
-.footer a {
-    text-decoration: none;
-    margin: 0;
-    color: #fff;
 }
