@@ -116,6 +116,7 @@ h5 {
     display: block;
     line-height: 1;
     margin: 5px 0 10px;
+    color: #989494;
 }
 
 @media only screen and (min-width:768px) {
@@ -213,7 +214,7 @@ hr {
     padding: 10px;
     margin: 2px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid #64ffda7a;
     transition: all .7s;
 }
 
@@ -237,6 +238,19 @@ hr {
     padding: 0 10;
 }
 
+.navbar-brand {
+    color: #989494 !important;
+}
+
+.navbar-dark .navbar-nav a:hover.navbar-brand, a:hover.nav-link, .nav-link.active {
+    color: #64ffda7a !important;
+}
+
+.systems a, .systems a:visited, .systems a:hover {
+    text-decoration: none;
+    color: #64ffda7a;
+}
+
 .systems ul {  
     margin: 0.75em 0;  
     padding: 0 1em;  
@@ -254,11 +268,6 @@ hr {
     left: -1em;  
     top: 0.9em;  
     position: relative;
-}
-
-a, a:visited, a:hover {
-    text-decoration: none;
-    color: #64ffda7a;
 }
 
 .user {
@@ -320,8 +329,8 @@ a, a:visited, a:hover {
 
 .project-link:active,
 .project-link:hover {
-    background-color: #54516a;
-    border-color: #54516a;
-    color: #64ffda7a;
+    background-color: #64ffda7a;
+    border-color: #64ffda7a;
+    color: #212529;
     transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in;
 }
