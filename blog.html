@@ -3,18 +3,21 @@ layout: default
 title: Sharky's Blog
 ---
 <section id="blog" class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-10">
-        <h2 class="text-center">Welcome to my blog!</h2>
-        <h3>Latest Posts</h3>
-        <ul>
+    <div class="col-lg-2"></div>
+    <div class="col-lg-8 mx-0 mx-md-5">
+        <h3 class="text-center">Welcome to my blog!</h3>
+        <p class="text-center">
+            Herein are all my posts on a variety of technical topics. Peruse at your leisure!
+        </p>
+        <h4 class="text-center">Latest Posts</h4>
+        <ul class="list">
             {% for post in site.posts %}
             <li>
-                <h2>{{ post.date | date_to_string }} : <a href="{{ post.url }}">{{ post.title }}</a></h2>
+                <h1>{{ post.date | date_to_string }} : <a href="{{ post.url }}">{{ post.title }}</a></h1>
                 <p>{{ post.excerpt }}</p>
             </li>
             {% endfor %}
         </ul>
     </div>
-    <div class="col-lg-1"></div>
+    <div class="col-lg-2"></div>
 </section>

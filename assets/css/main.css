@@ -1,8 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap);
 body {
     font-family: 'Montserrat', sans-serif;
     padding-bottom: 70px;
     margin: 0;
+    background: #212529;
+    color: #989494;
+}
+
+button {
+    border: 1px solid #64ffda7a !important;
+}
+
+h5 {
+    margin: .5rem 0;
 }
 
 @-webkit-keyframes pulse {
@@ -39,6 +50,23 @@ body {
     }
 }
 
+#blog h1 {
+    font-size: 1.25rem;
+}
+
+#blog h2 {
+    font-size: 1rem;
+}
+
+#blog ul {
+    list-style-type: none;
+    padding-inline-start: 0px;
+}
+
+#skills {
+    max-width: 100%;
+}
+
 #particles-js {
     background: #1a222c;
     position: absolute;
@@ -52,6 +80,10 @@ body {
 #particles-js .particles-js-canvas-el {
     width: 100vw!important;
     height: 100vh!important;
+}
+
+.container {
+    font-family: 'Roboto Mono', monospace;
 }
 
 .content {
@@ -147,7 +179,7 @@ body {
 }
 
 .footer {
-    background: #1a222c;
+    background: #343a40;
     padding: 10px 0;
     margin-top: 100px;
     text-align: center;
@@ -164,6 +196,9 @@ body {
     color: #fff;
 }
 
+hr {
+    border: 1px solid #64ffda7a;
+}
 .icons-header {
     display: flex;
     justify-content: center;
@@ -195,38 +230,35 @@ body {
         font-size: 35px;
         padding: 17px;
     }
+} 
+
+.navbar {
+    font-family: 'Roboto Mono', monospace;
+    padding: 0 10;
 }
 
-/* navbar alignment with main container content */
-@media only screen and (min-width: 768px) {
-    .navbar {
-        padding-right: 3rem;
-        padding-left: 3rem;
-    }
+.systems ul {  
+    margin: 0.75em 0;  
+    padding: 0 1em;  
+    list-style: none;  
+} 
+
+.systems li:before {   
+    content: "";  
+    border-color: transparent #64ffda7a;  
+    border-style: solid;  
+    border-width: 0.35em 0 0.35em 0.45em;  
+    display: block;  
+    height: 0;  
+    width: 0;  
+    left: -1em;  
+    top: 0.9em;  
+    position: relative;
 }
-@media only screen and (min-width: 992px) {
-    .navbar {
-        padding-right: 9rem;
-        padding-left: 9rem;
-    }
-}
-@media only screen and (min-width:1200px) {
-    .navbar {
-        padding-right: 18rem;
-        padding-left: 18rem;
-    }
-}
-@media only screen and (min-width:1700px) {
-    .navbar {
-        padding-right: 32rem;
-        padding-left: 32rem;
-    }
-}
-@media only screen and (min-width:2000px) {
-    .navbar {
-        padding-right: 52rem;
-        padding-left: 52rem;
-    }
+
+a, a:visited, a:hover {
+    text-decoration: none;
+    color: #64ffda7a;
 }
 
 .user {
@@ -245,9 +277,12 @@ body {
 }
 
 .user-details {
-    text-align: center;
+    text-align: left;
     font-size: 16px;
-    margin: 10px auto;
+}
+
+.user-details h1 {
+    text-align: center;
 }
 
 .user-projects {
@@ -272,9 +307,9 @@ body {
     display: block;
     margin: 10px 0;
     padding: 5px;
-    color: #1a222c;
+    color: #64ffda7a;
     background-color: transparent;
-    border: 1px solid #1a222c;
+    border: 1px solid #64ffda7a;
     border-radius: 10px;
     text-align: center;
     outline: none;
@@ -287,6 +322,6 @@ body {
 .project-link:hover {
     background-color: #54516a;
     border-color: #54516a;
-    color: #fff;
+    color: #64ffda7a;
     transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in;
 }
