@@ -7,59 +7,85 @@ title: About
   <div class="col-lg-10">
     <div class="row user-details">
       <div class="col">
-        <h1 class="mb-4 d-none d-sm-block"> Kayden Arias Sharky Althen </h2>
-        <h1 class="mb-4 d-block d-sm-none"> Kayden Althen </h2>
+        <h1 class="mb-4 d-none d-sm-block"> Kayden Arias Sharky Althen </h1>
+        <h1 class="mb-4 d-block d-sm-none"> Kayden Althen </h1>
         <hr>
-        <div class="systems">
-          <p class="text-center d-none d-sm-block">
-            I am a software developer living in Austin, TX. (Yee haw!)
+        <p class="text-center d-none d-sm-block">
+          Sometimes I <a href="https://slides.com/kaydenalthen">talk</a> about tech. Other times I <a href="/blog">write</a> about it. 
+          Always happy to <a href="mailto:kaydenalthen@gmail.com">chat</a>!
+        </p>
+        <p class="text-center d-block d-sm-none">
+          Sometimes I <a href="https://slides.com/kaydenalthen">talk</a> about tech.<br>
+          Other times I <a href="/blog">write</a> about it.<br>
+          Always happy to <a href="mailto:kaydenalthen@gmail.com">chat</a>!
+        </p>
+        <div class="mt-5">
+          <p class="text-center">
+            TL;DR - I am a software engineer living in Austin, TX.
           </p>
-          <p class="d-block d-sm-none">
-            I am a software developer living in Austin, TX. (Yee haw!)
-          </p>
-          <p>
-            I design and build a variety of systems, depending on the problem needed to be solved. Some of which include: 
+          <div class="text-center mb-3">
+            <button id="want-long-bio" class="bio">Want more bio?</button>
+          </div>
+          <div id="long-about" class="hide">
+            <p>
+              I came to Texas from Connecticut originally to <b class="highlight">pursue foreign language studies in Hindi and Urdu at the Graduate School at UT Austin</b>. 
+              Although I loved my studies and living in India, I never quite found a career that I was passionate about until I started teaching myself to build websites using HTML, CSS, JavaScript, and SQL in 2013. 
+            </p> 
+            <p>
+              After a few years of self teaching, I decided to ramp up my knowledge by doing a <b class="highlight">3-month intensive coding boot camp called Hack Reactor</b>, now Galvanize, that 
+              helped me improve from a web administrator and technical tinkerer to understanding how to build full stack, front end to back end web applications. 
+              Being in an intensive coding environment gave me the focus to take my career to the next level and helped me get my first job at a tech company, Rackspace. 
+            </p>
+            <p>
+              <b class="highlight">For 3 and a half years I worked at Rackspace</b>, learning how to collaborate on a team with other developers, how to write quality automation software, what acronyms like CICD stood for, and what implementing best practices really means.
+              My experiences both technically and socially at Rackspace shaped me so much as a developer; for all the people who spent time with me in my early Rackspace days showing me the ropes for my first job at a big tech company I am forever grateful.
+            </p>
+            <p>
+              After Rackspace I pursued two new opportunities, working for Adobe as a DevOps engineer (full time) and <b class="highlight">teaching full stacking web development at the UT Austin Coding Bootcamp</b> (part time). 
+            </p>
+            <p>
+              Teaching new developers a skill that can improve the trajectory of their lives in such an incredible way was a very rewarding experience. 
+              It confirmed for me the passion I have for teaching, mentoring, coaching individuals to pursue the difficult journey of becoming a software engineer.
+            </p>
+            <p>  
+              <b class="highlight">My current coding home is at Adobe as a software engineer in DevOps</b> building internal tools for development teams that work on Magento, which is currently right where I want to be. 
+              I particularly enjoy leading teams to streamline difficult/arduous tasks into automated systems. I get a lot of satisfaction from seeing code and processes made easier.
+            </p>
+          </div>
+          <hr>  
+            Technical areas I specialize in: 
             <div class="row">
               <div class="col">
                 <ul>
-                  <li>apis</li>
-                  <li>web applications</li>
-                  <li>cli programs</li>
-                  <li>HTTP, gRPC, TCP client/servers</li>
+                  <li>api &amp; web app development</li>
+                  <li>application deployment</li>
+                  <li>automated testing</li>
+                  <li>client/server protocols, HTTP|gRPC|TCP</li>
                 </ul>
               </div>
               <div class="col">
                 <ul>
-                  <li>chatbots</li>
-                  <li>distributed systems</li>
-                  <li>cloud native applications</li>
+                  <li>chatbot development</li>
+                  <li>cloud tech (AWS, Azure)</li>
+                  <li>infrastructure as code</li>
                   <li>GitHub integrations</li>
                 </ul>
               </div>
               <div class="col">
                   <ul>
-                    <li>security scanning</li>
-                    <li>quality automation</li>
-                    <li>deployment infrastructure</li>
-                    <li>automated cloud provisioning</li>
+                    <li>containerization</li>
+                    <li>agile sdlc</li>
+                    <li>micro-service architecture</li>
+                    <li>security tooling</li>
                   </ul>
                 </div>
             </div>
-          </p>
-          <p class="text-center d-none d-sm-block">
-            Sometimes I <a href="https://slides.com/kaydenalthen">talk</a> about tech. Other times I <a href="/blog">write</a> about it. 
-            Always happy to <a href="mailto:kaydenalthen@gmail.com">chat</a>!
-          </p>
-          <p class="text-center d-block d-sm-none">
-            Sometimes I <a href="https://slides.com/kaydenalthen">talk</a> about tech.<br>
-            Other times I <a href="/blog">write</a> about it.<br>
-            Always happy to <a href="mailto:kaydenalthen@gmail.com">chat</a>!
           </p>
           <hr>
         </div>
       </div>
     </div>
-    <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 user" id="skills">
+    <div class="row row-cols-1 row-cols-md-2 user" id="skills">
       <div class="col mb-sm-5">
         <h4>Web Development</h4>
         <i class="devicon-javascript-plain colored"></i>
@@ -96,7 +122,21 @@ title: About
       <div class="col mb-sm-5">
         <h4>Test Automation</h4>
         <i class="devicon-protractor-plain colored"></i>
-        <img alt="selenium" height="60" width="75" src="/assets/img/selenium.png" />
+        <img alt="selenium" height="80" width="95" src="/assets/img/selenium.png" />
+        <i class="devicon-mocha-plain colored"></i>
+        <img alt="jest" height="75" width="75" src="/assets/img/jest.png" />
+        <img alt="pytest" height="75" width="75" src="/assets/img/pytest.png" />
+        <img alt="saucelabs" height="75" width="75" src="/assets/img/saucelabs.png" />
+        <p>
+          Protractor &#8226; Mocha &#8226; Chai &#8226; Karma &#8226;
+          Selenium Webdriver &#8226; OpenCAFE &#8226;
+          Saucelabs &#8226; pytest &#8226; Jest
+        </p>
+      </div>
+      <div class="col mb-sm-5">
+        <h4>Test Automation</h4>
+        <i class="devicon-protractor-plain colored"></i>
+        <img alt="selenium" height="80" width="95" src="/assets/img/selenium.png" />
         <i class="devicon-mocha-plain colored"></i>
         <img alt="jest" height="75" width="75" src="/assets/img/jest.png" />
         <img alt="pytest" height="75" width="75" src="/assets/img/pytest.png" />

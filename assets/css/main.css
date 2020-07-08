@@ -50,6 +50,34 @@ h5 {
     }
 }
 
+#about b.highlight {
+    color: #64ffda7a;
+}
+
+#about a, #about a:visited, #about a:hover {
+    text-decoration: none;
+    color: #64ffda7a;
+}
+
+#about ul {  
+    margin: 0.75em 0;  
+    padding: 0 1em;  
+    list-style: none;  
+} 
+
+#about li:before {   
+    content: "";  
+    border-color: transparent #64ffda7a;  
+    border-style: solid;  
+    border-width: 0.35em 0 0.35em 0.45em;  
+    display: block;  
+    height: 0;  
+    width: 0;  
+    left: -1em;  
+    top: 0.9em;  
+    position: relative;
+}
+
 #blog h1 {
     font-size: 1.25rem;
 }
@@ -61,10 +89,6 @@ h5 {
 #blog ul {
     list-style-type: none;
     padding-inline-start: 0px;
-}
-
-#skills {
-    max-width: 100%;
 }
 
 #particles-js {
@@ -80,6 +104,32 @@ h5 {
 #particles-js .particles-js-canvas-el {
     width: 100vw!important;
     height: 100vh!important;
+}
+
+#skills {
+    max-width: 100%;
+}
+
+#want-long-bio {
+    margin: 10px 0;
+    padding: 5px;
+    color: #64ffda7a;
+    background-color: transparent;
+    border: 1px solid #64ffda7a;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease-out, background-color .3s ease-out, border-color .3s ease-out;
+}
+
+.bio:active,
+.bio:hover {
+    background-color: #64ffda7a;
+    border-color: #64ffda7a;
+    color: #212529;
+    transition: color .3s ease-in, background-color .3s ease-in, border-color .3s ease-in;
 }
 
 .container {
@@ -196,6 +246,9 @@ h5 {
     margin: 0;
     color: #fff;
 }
+.hide {
+    display:none;
+}
 
 hr {
     border: 1px solid #64ffda7a;
@@ -244,30 +297,6 @@ hr {
 
 .navbar-dark .navbar-nav a:hover.navbar-brand, a:hover.nav-link, .nav-link.active {
     color: #64ffda7a !important;
-}
-
-.systems a, .systems a:visited, .systems a:hover {
-    text-decoration: none;
-    color: #64ffda7a;
-}
-
-.systems ul {  
-    margin: 0.75em 0;  
-    padding: 0 1em;  
-    list-style: none;  
-} 
-
-.systems li:before {   
-    content: "";  
-    border-color: transparent #64ffda7a;  
-    border-style: solid;  
-    border-width: 0.35em 0 0.35em 0.45em;  
-    display: block;  
-    height: 0;  
-    width: 0;  
-    left: -1em;  
-    top: 0.9em;  
-    position: relative;
 }
 
 .user {
