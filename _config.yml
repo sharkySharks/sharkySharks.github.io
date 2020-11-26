@@ -5,16 +5,19 @@ description: A personal website and blog
 # url: "localhost:3000"
 
 username: sharkySharks
-user_description: I am a software developer with a strong focus in automation, particularly in the realm of CICD (continuous integration continuous delivery/deployment) pipelines and testing for web development projects. I enjoy streamlining code development with tooling, fixing bugs, and creating smooth and continuous code deployments.
 user_title: Software Engineer
 email: kaydenalthen@gmail.com
 twitter_username: sharkyAlt
 github_username:  sharkySharks
 linkedIn_username: kaydenalthen
-medium_username: '@sharkysharks'
 
 # Google-analytics
 google-analytics:
   id: "UA-104248956-1"
 
-exclude: ['package.json', 'src' , 'node_modules', 'gulpfile.js']
+exclude: [
+  'package.json',
+  'src' , 
+  'node_modules', 
+  'gulpfile.js'
+]

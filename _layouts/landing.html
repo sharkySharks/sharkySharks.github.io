@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+      
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        
+        <link rel="stylesheet" href="/assets/vendor/font-awesome/css/all.min.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+        <script src="/assets/vendor/particles.min.js"></script>
+        <script>
+          /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+          particlesJS.load('particles-js', 'assets/particles.json', function() {
+            console.log('callback - particles.js config loaded');
+          });
+        </script>
+        {% include google-analytics.html %}
+      </head>      
+  <body>
+      <div id="particles-js">
+          <div class="content">
+              <h1>
+                <span class="site-title">{{site.username}}</span>
+                <span class="site-description">{{site.user_title}}</span>
+              </h1>
+              <div class="icons-header">
+                <a aria-label="My LinkedIn" target="_blank" href="https://www.linkedin.com/in/{{site.linkedIn_username}}/"><i class="icon fab fa-linkedin" aria-hidden="true"></i></a>
+                <a aria-label="My Github" target="_blank" href="https://github.com/{{site.github_username}}"><i class="icon fab fa-github" aria-hidden="true"></i></a>
+                <a aria-label="My Presentations" target="_blank" href="https://slides.com/kaydenalthen"><i class="icon fas fa-chalkboard-teacher" aria-hidden="true"></i></a>
+                <a aria-label="Send email" href="mailto:{{site.email}}"><i class="icon far fa-envelope"></i></a>
+              </div>
+              <a class="link" href="/about">About</a>
+              <a class="link" href="/projects">Projects</a>
+              <!-- <a class="link" href="/blog">Blog</a> -->
+          </div>
+        </div>
+  </body>
+</html>

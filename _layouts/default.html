@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  {% include head.html %}
-  <body>
-      {% include header.html %}
-      <section id="about">
-        {% include about.html %}
-      </section>
-      <section id="projects">
-        {% include projects.html %}
-      </section>
-        {{ content }}
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+        <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+        <link rel="stylesheet" href="/assets/vendor/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/vendor/devicons/devicon.min.css">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        <link rel="shortcut icon" type="image/x-icon" href="/assets/img/favicon.ico" />
+        <script src="/assets/vendor/jquery/jquery.min.js"></script>
+        <script src="/assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/assets/vendor/sweet-scroll.min.js"></script>
+        <script type="text/javascript" src="/assets/js/main.js"></script>
+        {% include google-analytics.html %}
+    </head>    
+  <body style="padding-top: 70px;">
+    <div class="container">
+      {% include nav.html %}
+      {{ content }}
       {% include footer.html %}
+    </div>
   </body>
+</html>
