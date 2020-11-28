@@ -50,6 +50,10 @@ h5 {
     }
 }
 
+#about h1 {
+    color: #fff;
+}
+
 #about b.highlight {
     color: #64ffda7a;
 }
@@ -89,6 +93,10 @@ h5 {
 #blog ul {
     list-style-type: none;
     padding-inline-start: 0px;
+}
+
+#projects h1, h5 {
+    color: #fff;
 }
 
 #particles-js {
@@ -167,6 +175,7 @@ h5 {
     line-height: 1;
     margin: 5px 0 10px;
     color: #989494;
+    text-shadow: 1px 1px black;
 }
 
 @media only screen and (min-width:768px) {
