@@ -99,6 +99,11 @@ h5 {
     color: #fff;
 }
 
+#projects i {
+    font-size: 20px;
+    color: white;    
+}
+
 #particles-js {
     background: #1a222c;
     position: absolute;
